@@ -1,0 +1,20 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+View Transactions
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for transaction in ls.transaction_set.all %}
+        <p>Id: {{transaction.id}}</p>
+        <p>Sender: {{transaction.sendler}}</p>
+        <p>Receiver: {{transaction.reciever}}</p>
+        <p>Transfer_amount: {{transaction.transfer_amount}}</p>
+        <p>Commision: {{transaction.commision}}</p>
+        <p>Status: {{transaction.status}}</p>
+        <p>Timestamp: {{transaction.crompleted_on}}</p>
+        <hr>
+    {% endfor %}
+</ul>
+{% endblock %}
