@@ -20,12 +20,12 @@ class Wallet(models.Model):
 
 class Transaction(models.Model):
     wallet = models.ForeignKey(Wallet, on_delete= models.CASCADE)
-    sendler = models.CharField(max_length = 20)
-    reciever = models.CharField(max_length = 20)
+    sender = models.CharField(max_length = 20)
+    receiver = models.CharField(max_length = 20)
     transfer_amount = models.DecimalField(max_digits=20, decimal_places=2)
     commision = models.DecimalField(max_digits=20, decimal_places=2)
     status = models.CharField(max_length=300, default="PAID")
-    crompleted_on = models.DateTimeField(auto_now_add=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.sendler

@@ -6,7 +6,7 @@ class ProfileAdmin(admin.ModelAdmin):
     readonly_fields = ("created_on", "modified_on")
 
 class ProfileAdminTransaction(admin.ModelAdmin):
-    readonly_fields = ( "crompleted_on",)
+    readonly_fields = ( "timestamp",)
 
 admin.site.register(Wallet, ProfileAdmin)
 

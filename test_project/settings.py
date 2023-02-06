@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,7 +40,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "crispy_forms",
     "main.apps.MainConfig",
-    "register.apps.RegisterConfig",
+    #"register.apps.RegisterConfig",
+
+    'rest_framework',
+    'knox',
+    'register_login_logout',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +134,12 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/login"
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        #'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'knox.auth.TokenAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
