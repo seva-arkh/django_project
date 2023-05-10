@@ -1,0 +1,24 @@
+{% extends "main/base.html"%}
+
+{% block title %}
+{{ls.type}}
+{% endblock %}
+
+{% block content %}
+ <h1>{{ls.name}}</h1>
+ <ul>
+    <p>Id: {{ls.id}}</p>
+    <p>Type: {{ls.type}}</p>
+    <p>Currency:{{ls.currency}}</p>
+    <p>Balance: {{ls.balance}}</p>
+    <p>Created on: {{ls.created_on}}</p>
+    <p>Modified on: {{ls.modified_on}}</p>
+ </ul>
+ <form method="POST" action="#" >
+      {% csrf_token %}
+      <input type="float" name="new">
+      <button type="submit" name="newItem", value="newItem">Add Balance</button>
+      <button type="delete" name="deleteWallet", value="newItem">Delete Wallet</button>
+      <button type="submit" name="view_transactions", value="view_transactions">View Transactions</button>
+ </form>
+{% endblock %}

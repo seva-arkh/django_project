@@ -1,0 +1,14 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+Type of Transfer
+{% endblock%}
+
+{% block content %}
+<h1> Transfer Type</h1>
+<form method="POST" action="#" >
+    {% csrf_token %}
+    <button type="submit" name="internal", value="internal">internal</button>
+    <button type="submit" name="external", value="external">external</button>
+</form>
+{% endblock %}

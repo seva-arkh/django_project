@@ -1,0 +1,27 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+Internal Transfer
+{% endblock %}
+
+{% block content %}
+<h1>Transfer</h1>
+<form method="POST" action="#" >
+     {% csrf_token %}
+     Transfer from
+     <select id="from" name="from">
+         {% for wallet in user.wallet.all %}
+            <option>{{wallet.name}}</option>
+        {% endfor %}
+     </select>
+
+     Transfer to
+     <select id="to" name="to">
+         {% for wallet in user.wallet.all %}
+            <option>{{wallet.name}}</option>
+        {% endfor %}
+     </select>
+     <input type="float" name="amount">
+     <button type="submit" name="next", value="next">Proceed</button>
+</form>
+{% endblock %}
