@@ -14,7 +14,7 @@ log in to an account. API request: {
 }
 ### "logout_api/" - log out from an account
 ### "wallets/"
-* view all user's wallets. Returns in a such form: { __
+* view all user's wallets. Returns in a such form: {  
         "id": "16",__
         "name": "E3FCB82E",__
         "type": "VISA",__
