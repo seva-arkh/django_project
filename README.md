@@ -2,22 +2,22 @@
 prototype of a bank app using django REST framework. It has such fuctions
 URLS:
 ### "register_api/"
-Creates an account. API request: {
-    "username": "",
-    "email": "",
-    "password": ""
+Creates an account. API request: {  
+    "username": "",  
+    "email": "",  
+    "password": ""  
 }
 ### "login_api/"
-log in to an account. API request: {
-    "username": "",
-    "password": ""
+log in to an account. API request: {  
+    "username": "",  
+    "password": ""  
 }
 ### "logout_api/" - log out from an account
 ### "wallets/"
 * view all user's wallets. Returns in a such form: {  
-        "id": "16",__
-        "name": "E3FCB82E",__
-        "type": "VISA",__
+        "id": "16",  
+        "name": "E3FCB82E",  
+        "type": "VISA",  
         "currency": "RUB",__
         "balance": "145.00",__
         "created_on": "2023-05-09T14:26:05.756975Z",__
