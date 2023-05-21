@@ -14,14 +14,14 @@ log in to an account. API request: {
 }
 ### "logout_api/" - log out from an account
 ### "wallets/"
-* view all user's wallets. Returns in a such form: {
-        "id": "16",
-        "name": "E3FCB82E",
-        "type": "VISA",
-        "currency": "RUB",
-        "balance": "145.00",
-        "created_on": "2023-05-09T14:26:05.756975Z",
-        "modified_on": "2023-05-09T14:53:38.385735Z"
+* view all user's wallets. Returns in a such form: { __
+        "id": "16",__
+        "name": "E3FCB82E",__
+        "type": "VISA",__
+        "currency": "RUB",__
+        "balance": "145.00",__
+        "created_on": "2023-05-09T14:26:05.756975Z",__
+        "modified_on": "2023-05-09T14:53:38.385735Z"__
     }. 
     * id: id of a wallet
     * name: unique name of an each wallet. It is an 8 characters long name that is genereted randomly 
