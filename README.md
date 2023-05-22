@@ -43,14 +43,14 @@ logout from an account
 * delete this wallet
 
 ### "wallets/transactions/"
-* view all user's transactions in such form:{  
+* view all user's transactions in such form: {  
             "id": "31",  
             "sender": "7A758158",  
             "receiver": "E3FCB82E",  
             "transfer_amount": "25.00",  
             "commission": "0.00",  
             "status": "PAID",  
-            "timestamp": "2023-05-09T14:42:53.685596Z". 
+            "timestamp": "2023-05-09T14:42:53.685596Z"  
         }   
     * id: id of a transaction.
     * sender: name of a sender's wallet. The type of currency of the receiver's and sender's wallet should be the same.
