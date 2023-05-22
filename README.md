@@ -1,5 +1,5 @@
 # django_project
-Prototype of a banking application using the django REST framework. It has these functions.
+Prototype of a transactions service using the django REST framework. It has these functions.
 URLS:
 ### "register_api/"
 Create an account. API request: {  
