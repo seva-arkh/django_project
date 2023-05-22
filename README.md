@@ -52,13 +52,13 @@ log in to an account. API request: {
             "status": "PAID",  
             "timestamp": "2023-05-09T14:42:53.685596Z". 
         }   
-        * id: id of a transation.
-        * sender: name of a sendler's wallet. Type of currency of reciever's wallet should be the same
-        * receiver: name of a receiver's wallet.
-        * transfer_amount: the amount of money that is transfered from one wallet to anouther. 
-        * commision: comission is 0 if sender and reciever wallets belong to one user. Otherwise comision is 5%.
-        * status: it can be PAID or FAILED depending on whether or not a transaction was completed successfull.
-        * timestamp: time when transaction was made.
+    * id: id of a transation.
+    * sender: name of a sendler's wallet. Type of currency of reciever's wallet should be the same
+    * receiver: name of a receiver's wallet.
+    * transfer_amount: the amount of money that is transfered from one wallet to anouther. 
+    * commision: comission is 0 if sender and reciever wallets belong to one user. Otherwise comision is 5%.
+    * status: it can be PAID or FAILED depending on whether or not a transaction was completed successfull.
+    * timestamp: time when transaction was made.
 
 ### "wallets/transactions/id/"
 get a transaction by its id
