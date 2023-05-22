@@ -31,7 +31,7 @@ log in to an account. API request: {
     * balance: balance of a wallet
     * created_on: time when a wallet was created
     * modified_on: time when the balance was updated
-* create a wallet. API request: {. 
+* create a wallet. API request: {  
         "type": "VISA",  
         "currency": "RUB",  
     }.  
@@ -43,7 +43,7 @@ log in to an account. API request: {
 * delete this wallet
 
 ### "wallets/transactions/"
-* view all urser's transactions in a such form:{. 
+* view all urser's transactions in a such form:{  
             "id": "31",  
             "sender": "7A758158",  
             "receiver": "E3FCB82E",  
@@ -51,7 +51,7 @@ log in to an account. API request: {
             "commision": "0.00",  
             "status": "PAID",  
             "timestamp": "2023-05-09T14:42:53.685596Z". 
-        }. 
+        }   
         * id: id of a transation.
         * sender: name of a sendler's wallet. Type of currency of reciever's wallet should be the same
         * receiver: name of a receiver's wallet.
