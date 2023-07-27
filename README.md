@@ -1,6 +1,5 @@
 # django_project
-Prototype of a transactions service using the django REST framework. It has these functions.
-URLS:
+Prototype of a transactions service using the django REST framework. It has such functions as (URLS):
 ### "register_api/"
 Create an account. API request: {  
     "username": "",  
